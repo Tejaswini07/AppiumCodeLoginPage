@@ -13,7 +13,7 @@ public class Demo {
  AndroidDriver driver;
 
 @BeforeClass
-    protected void prepareAndroidForAppium() throws MalformedURLException {
+    public void prepareAndroidForAppium() throws MalformedURLException {
         File appDir = new File("/Users/nishant/Development/AppiumDemo/apps");
         File app = new File(appDir, "Flipkart.3.0.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
